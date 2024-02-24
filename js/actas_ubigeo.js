@@ -1,4 +1,3 @@
 const getDepartamentos = async()=>{
-
     
 }
