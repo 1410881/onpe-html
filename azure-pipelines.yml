@@ -1,4 +1,14 @@
 # HTML
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure for Students(af083997-32e1-48b2-80e5-b1d1649021a1)'
+    appType: 'webApp'
+    appName: 'pallares'
+    deployToSlotOrASE: true
+    resourceGroupName: 'pallares_group'
+    slotName: 'production'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
 # Archive your static HTML project and save it with the build record.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
